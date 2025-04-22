@@ -28,20 +28,22 @@
         <!-- school header -->
         <div class="school-header">
           <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/008/040/410/small_2x/school-logo-design-template-free-vector.jpg"
+            src="./logo.jpeg"
             alt="logo-here"
             class="school-logo"
           />
-          <h2>Hello School</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h2>Progressive English School</h2>
+          <p>Learn Progress Lead</p>
         </div>
 
         <!-- nav menu -->
         <div class="nav-menu">
-          <button>Hello 1</button>
-          <button>Hello 2</button>
-          <button>Hello 3</button>
-          <button>Hello 4</button>
+          <button onclick="showSection('dashboard')">Dashboard</button>
+
+          <button onclick="showSection('students')">Students</button>
+
+          <button onclick="showSection('notices')">Notices</button>
+          <button onclick="showSection('settings')">Settings</button>
         </div>
 
         <div class="version-info">Version 2.0</div>
@@ -64,11 +66,13 @@
         </div>
 
         <!-- Students Section -->
-        <div id="studentsSection" class="">
+        <div id="studentsSection" class="hidden">
           <div class="dashboard-card">
             <h2>Student Management</h2>
             <div class="form-group">
-              <button onclick="showSection('admit')" class="action-btn">Admit New Student</button>
+              <button onclick="showSection('admit')" class="action-btn">
+                Admit New Student
+              </button>
             </div>
             <table class="student-table">
               <thead>
@@ -86,21 +90,21 @@
         </div>
 
         <!-- Admit Student Section -->
-        <div id="admitSection" class="">
+        <div id="admitSection" class="hidden">
           <div class="dashboard-card">
             <h2>Admit New Student</h2>
             <form id="admitForm" class="form">
               <div class="form-group">
                 <label for="studentName">Student Name</label>
-                <input type="text" id="studentName" required>
+                <input type="text" id="studentName" required />
               </div>
               <div class="form-group">
                 <label for="studentClass">Class</label>
-                <input type="text" id="studentClass" required>
+                <input type="text" id="studentClass" required />
               </div>
               <div class="form-group">
                 <label for="studentRoll">Roll Number</label>
-                <input type="text" id="studentRoll" required>
+                <input type="text" id="studentRoll" required />
               </div>
               <button type="submit" class="btn">Admit Student</button>
             </form>
@@ -108,13 +112,13 @@
         </div>
 
         <!-- Notices Section -->
-        <div id="noticesSection" class="">
+        <div id="noticesSection" class="hidden">
           <div class="dashboard-card">
             <h2>Create New Notice</h2>
             <form id="noticeForm" class="form">
               <div class="form-group">
                 <label for="noticeTitle">Notice Title:</label>
-                <input type="text" id="noticeTitle" required>
+                <input type="text" id="noticeTitle" required />
               </div>
               <div class="form-group">
                 <label for="noticeContent">Notice Content:</label>
@@ -123,7 +127,7 @@
               <button type="submit" class="btn">Publish Notice</button>
             </form>
           </div>
-          
+
           <div class="dashboard-card">
             <h2>All Notices</h2>
             <div id="noticesList" class="notices-list">
@@ -133,7 +137,7 @@
         </div>
 
         <!-- Settings Section -->
-        <div id="settingsSection" class="">
+        <div id="settingsSection" class="hidden">
           <div class="dashboard-card">
             <h2>School Settings</h2>
             <form id="schoolSettings">
@@ -154,9 +158,9 @@
           </div>
         </div>
       </div>
-      
-      
-      <!--  -->
+
+      <!-- Script -->
+      <script src="./script.js"></script>
     </div>
   </body>
 </html>
