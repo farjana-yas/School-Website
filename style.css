@@ -675,6 +675,63 @@ button[type="submit"]:hover {
     margin-top: 1rem;
 }
 
+/* Login page section */
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    p{
+        text-align: center;
+        margin-top: 1rem;
+        color: #666;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    button:hover {
+        background-color: #3367d6;
+    }
+    .error-message {
+        color: red;
+        margin-top: 1rem;
+        text-align: center;
+        display: none;
+    }
+}
+
+
 /* Responsive adjustments for modals */
 @media (max-width: 768px) {
     .modal-content {
